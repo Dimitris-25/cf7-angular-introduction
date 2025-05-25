@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { PersonTableComponent } from './components/person-table/person-table.component';
 import { Person } from './shared/interfaces/person';
 import { EventBindexampleComponent } from './components/event-bindexample/event-bindexample.component';
 
 @Component({
   selector: 'app-root',
-  imports: [PersonTableComponent, EventBindexampleComponent],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
